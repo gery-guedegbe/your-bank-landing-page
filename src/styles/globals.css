@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  font-family: "Lexend", sans-serif;
+}
+
+@theme {
+  /* Custom Colors */
+  --color-custom-green-60: #caff33;
+  --color-custom-green-65: #d1ff4d;
+  --color-custom-green-70: #d8ff66;
+  --color-custom-green-70: #e5ff99;
+  --color-custom-green-90: #f2ffcc;
+  --color-custom-green-95: #f8ffe5;
+  --color-custom-green-70: #fbfff0;
+  --color-custom-green-70: #fefffa;
+  /* White */
+  --color-custom-white-90: #e4e4e7;
+  --color-custom-white-95: #f1f1f3;
+  --color-custom-white-97: #f7f7f8;
+  --color-custom-white-99: #fcfcfd;
+  /* Grey */
+  --color-custom-grey-10: #1a1a1a;
+  --color-custom-grey-11: #1c1c1c;
+  --color-custom-grey-15: #262626;
+  --color-custom-grey-20: #333333;
+  --color-custom-grey-30: #4c4c4d;
+  --color-custom-grey-35: #59595a;
+  --color-custom-grey-40: #656567;
+  --color-custom-grey-60: #98989a;
+  --color-custom-grey-70: #b3b3b3;
+  --color-custom-grey-75: #bfbfbf;
+
+  /* Custom Breakpoint */
+  --breakpoint-deskop-width: 1920px;
+  --breakpoint-laptop-width: 1440px;
+  --breakpoint-mobile-width: 390px;
+}
+
+body {
+  /* background: #1e1e1e; */
+  color: white;
+}
