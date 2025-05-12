@@ -44,3 +44,14 @@ body {
   /* background: #1e1e1e; */
   color: white;
 }
+
+.header_vector {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url("/src/assets/images/abstack-design.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
