@@ -9,7 +9,7 @@ import UseCaseSection from "@/components/sections/home/UseCase/UseCaseSection";
 
 export default function Page() {
   return (
-    <div className="mt-2 flex w-full flex-col items-start gap-12 lg:gap-16">
+    <div className="mt-2 flex w-full flex-col items-start gap-12 px-4 lg:gap-16 lg:px-16">
       <HeroSection />
       <ProductSection />
       <UseCaseSection />

@@ -11,8 +11,8 @@ function HeroSection() {
   const router = useRouter();
 
   return (
-    <section className="flex w-full flex-col items-start justify-between gap-8 lg:flex-row">
-      <div className="flex w-full flex-col items-start gap-6 lg:w-1/2">
+    <section className="flex w-full flex-col items-start justify-between gap-8 text-center lg:flex-row lg:text-start">
+      <div className="flex w-full flex-col items-center gap-6 lg:w-1/2 lg:items-start">
         <div className="bg-custom-grey-15 flex items-center gap-1 rounded-full px-4 py-2 lg:gap-1.5">
           <Image
             src={check_icon}

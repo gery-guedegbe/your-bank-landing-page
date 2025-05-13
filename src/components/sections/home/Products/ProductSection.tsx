@@ -1,3 +1,5 @@
+"use client";
+
 import bag_icon from "@assets/icons/bag-icon.svg";
 import download_trash_icon from "@assets/icons/download-trash-icon.svg";
 import loans_icon from "@assets/icons/loans-icon.svg";
@@ -60,7 +62,7 @@ function ProductSection() {
             className="hover:bg-custom-grey-10/30 flex flex-col items-center px-6 py-8 text-center transition-all duration-300"
           >
             {/* Icône avec espacement contrôlé */}
-            <div className="mb-5 flex h-20 w-20 items-center justify-center lg:mb-6 lg:h-24 lg:w-24">
+            <div className="mb-3 flex h-20 w-20 items-center justify-center md:mb-5 lg:mb-6 lg:h-24 lg:w-24">
               <Image
                 src={item.icon}
                 alt={item.title + " icon"}
@@ -71,12 +73,12 @@ function ProductSection() {
             </div>
 
             {/* Titre avec gestion fine des marges */}
-            <h3 className="mb-3 text-xl font-medium text-white lg:mb-4 lg:text-2xl">
+            <h3 className="mb-3 text-lg font-medium text-white lg:mb-4 lg:text-2xl">
               {item.title}
             </h3>
 
             {/* Description avec ligne de longueur optimale */}
-            <p className="text-custom-grey-70 mx-auto max-w-[320px] text-base leading-relaxed font-light lg:text-lg">
+            <p className="text-custom-grey-70 mx-auto max-w-[320px] text-sm leading-relaxed font-light lg:text-lg">
               {item.desc}
             </p>
           </div>

@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="deskop-width:w-[60vw] laptop-width:w-[70vw] relative mx-auto flex min-h-screen w-full max-w-[1920px] flex-col gap-6 px-4 pt-2 lg:gap-10 lg:px-16 lg:pt-8">
+      <body className="deskop-width:w-[60vw] laptop-width:w-[70vw] relative mx-auto flex min-h-screen w-full max-w-[1920px] flex-col gap-6 pt-2 lg:gap-10 lg:pt-8">
         <Image
           src={abstrack_design}
           alt="Abstrack Design Vector"
