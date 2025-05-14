@@ -33,11 +33,11 @@ export default function RootLayout({
           content="Discover a new generation banking interface - pixel perfect design, blazing fast performance and intuitive UX."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourbank-example.com" />
         <meta
-          property="og:image"
-          content="https://yourbank-example.com/preview.jpg"
+          property="og:url"
+          content="https://your-bank-landing-page.vercel.app/login"
         />
+        <meta property="og:image" content="/favicon.ico" />
         <meta property="og:image:alt" content="YourBank landing page preview" />
 
         {/* Balises Twitter */}
@@ -55,7 +55,10 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/icon.svg" />
 
         {/* Canonical URL */}
-        <link rel="canonical" href="https://yourbank-example.com" />
+        <link
+          rel="canonical"
+          href="https://your-bank-landing-page.vercel.app/login"
+        />
 
         {/* Viewport et charset */}
         <meta charSet="utf-8" />
