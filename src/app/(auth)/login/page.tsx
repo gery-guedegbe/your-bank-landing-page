@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 import Image from "next/image";
 import google_auth_icon from "@assets/icons/google-auth-icon.svg";
 import facebook_auth_icon from "@assets/icons/facebook-auth-icon.svg";
@@ -14,13 +14,13 @@ export default function Page() {
     password: "",
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Traitement de la soumission du formulaire
     console.log("Form submitted:", formData);
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
