@@ -11,10 +11,17 @@ import {
 
 import arrow_right_top from "@assets/icons/arrow-right-top.svg";
 
+// Définir un type pour les onglets
+type TabType = "onlineBanking" | "financialTools" | "customerSupport";
+
+// Type pour les items d'onglet
+interface TabItem {
+  id: TabType;
+  label: string;
+}
+
 function FeaturesSection() {
-  const [activeTab, setActiveTab] = useState<
-    "onlineBanking" | "financialTools" | "customerSupport"
-  >("onlineBanking");
+  const [activeTab, setActiveTab] = useState<TabType>("onlineBanking");
 
   const getActiveData = () => {
     switch (activeTab) {
@@ -26,6 +33,12 @@ function FeaturesSection() {
         return onlineBankingItems;
     }
   };
+
+  const tabs: TabItem[] = [
+    { id: "onlineBanking", label: "Online Banking" },
+    { id: "financialTools", label: "Financial Tools" },
+    { id: "customerSupport", label: "Customer Support" },
+  ];
 
   return (
     <section className="flex w-full flex-col items-start justify-between gap-16">
@@ -43,14 +56,10 @@ function FeaturesSection() {
 
       <div className="flex w-full flex-col items-center justify-between gap-4 overflow-y-auto lg:flex-row lg:items-start lg:gap-6">
         <div className="bg-custom-grey-11 border-custom-grey-15 grid w-full grid-cols-2 items-center gap-2.5 rounded-xl border-[1px] p-2 lg:w-1/3 lg:grid-cols-1 lg:gap-4 lg:p-6">
-          {[
-            { id: "onlineBanking", label: "Online Banking" },
-            { id: "financialTools", label: "Financial Tools" },
-            { id: "customerSupport", label: "Customer Support" },
-          ].map((tab) => (
+          {tabs.map((tab) => (
             <button
               key={tab.id}
-              onClick={() => setActiveTab(tab.id as any)}
+              onClick={() => setActiveTab(tab.id)}
               className={`border-custom-grey-15 bg-custom-grey-10 w-full cursor-pointer rounded-full border-[1px] px-2 py-2.5 text-sm leading-[150%] font-medium transition-all hover:opacity-70 md:px-6 md:text-base lg:w-56 lg:py-4 lg:text-lg ${
                 activeTab === tab.id ? "text-custom-green-60" : "text-white"
               }`}
