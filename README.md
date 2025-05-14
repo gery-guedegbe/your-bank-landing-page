@@ -30,16 +30,12 @@
 
 ```bash
   npm install
-  # ou
-  yarn install
 ```
 
 3. **Démarrer le serveur de développement :** :
 
 ```bash
 npm run dev
-# ou
-yarn dev
 ```
 
 4. **Ouvrir dans le navigateur :** :
@@ -49,4 +45,5 @@ http://localhost:3000
 ```
 
 ✨ Développé avec soin par Géry GUEDEGBE
+
 🔗 Lien Figma : https://www.figma.com/design/Hgr0abwrJ4BLDjanisBvSn/Digital-Agency-Company-Website-UI-Design-Template-in-Dark-Theme---FREE-Editable----Community-?t=8yhnmxUrbZsXZzrr-0
