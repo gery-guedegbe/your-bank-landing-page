@@ -22,7 +22,7 @@
 1. **Cloner le dépôt** :
 
 ```bash
-  git clone https://github.com/votre-username/your-bank-landing-page.git
+  git clone https://github.com/gery-guedegbe/your-bank-landing-page.git
   cd your-bank-landing-page
 ```
 
