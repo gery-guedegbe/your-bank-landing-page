@@ -3,8 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
 import { motion } from "motion/react";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 import logo from "@assets/logos/logo.svg";
